@@ -78,7 +78,7 @@ function getFileExtension(file) {
   var chunks = file.name.split('.');
   var ext = chunks.length > 1 ? chunks.pop() : '';
 
-  return ext;
+  return ext.toLowerCase();
 }
 
 function finVodKey(file, info) {
